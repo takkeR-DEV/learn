@@ -17,7 +17,7 @@ body {
   font-family: "TT Lakes";
   background: #f8f8f8;
   min-width: 320px;
-  margin:0;
+  margin: 0;
 }
 
 .wrapper {
@@ -51,7 +51,6 @@ body {
 /*----Ровняем лого CPS----------------------------------------------------*/
 .nav__burger img {
   margin-bottom: 5px;
-
 }
 
 @media all and (min-width: 768px) {
@@ -144,7 +143,7 @@ body {
     min-width: 145px;
     padding-left: 0;
   }
-    .nav__actions li:nth-child(4)::before {
+  .nav__actions li:nth-child(4)::before {
     visibility: hidden;
   }
 }
@@ -171,7 +170,7 @@ body {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  background-image: url("/img/highlight.png");
+  background-image: url("img/highlight.png");
   background-repeat: no-repeat;
   margin-right: 20px;
   width: 4px;
@@ -243,7 +242,7 @@ body {
   padding: 7px 10px 0;
 }
 .menu-scroll {
-  margin-left:12px;
+  margin-left: 12px;
 }
 
 /* .menu-scroll ul li:nth-child(1) {
@@ -317,7 +316,7 @@ background: white;
   background-color: transparent;
   cursor: pointer;
   padding: 20px;
-  color: #1B1C21;
+  color: #1b1c21;
   font-weight: bold;
   font-style: normal;
 }
@@ -331,9 +330,7 @@ background: white;
   height: 25px;
 }
 
-
 .main__read-more > img {
   display: inline-block;
   vertical-align: middle;
 }
-
