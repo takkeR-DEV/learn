@@ -1,0 +1,339 @@
+/*----подкдючаем шрифт----------------------------------------------------*/
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes/TTLakes-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes/TTLakes-DemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*----Оболочка----------------------------------------------------*/
+body {
+  font-family: "TT Lakes";
+  background: #f8f8f8;
+  min-width: 320px;
+  margin:0;
+}
+
+.wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+/*----Меню в шапке----------------------------------------------------*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  min-width: 320px;
+  min-height: 85px;
+}
+
+.nav__burger {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 160px;
+  margin-left: 5px;
+}
+.nav__burger button {
+  background-image: url("img/burger.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-left: 12px;
+}
+/*----Ровняем лого CPS----------------------------------------------------*/
+.nav__burger img {
+  margin-bottom: 5px;
+
+}
+
+@media all and (min-width: 768px) {
+  .nav__burger button::after {
+    display: inline-block;
+    align-self: center;
+    content: "";
+    width: 2px;
+    height: 30px;
+    background: #eaeaea;
+    margin: 5px 10px 5px 52px;
+  }
+  .nav__burger img {
+    margin-left: 25px;
+  }
+}
+/*----Убираем точки li----------------------------------------------------*/
+.nav ul {
+  list-style: none;
+}
+/*----Добавляем перегородку перед repair----------------------------------------------------*/
+.nav__actions li:nth-child(4)::before {
+  display: inline-block;
+  align-self: center;
+  content: "";
+  width: 2px;
+  height: 30px;
+  background: #eaeaea;
+  margin: 0 10px 5px 10px;
+}
+/*----Flex для правой колонки (column)----------------------------------------------------*/
+.nav__actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 280px;
+  margin-right: 15px;
+}
+/* перенос из html в bg */
+.nav__actions li:nth-of-type(1) button {
+  background-image: url("img/call.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+.nav__actions li:nth-of-type(2) button {
+  background-image: url("img/chat.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+.nav__actions li:nth-of-type(3) button {
+  background-image: url("img/profile.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+.nav__actions li:nth-of-type(4) button {
+  background-image: url("img/repair.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+.nav__actions li:nth-of-type(5) button {
+  background-image: url("img/checkstatus.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+/*----Убираем видимость кнопок transparent - прозрачный фон----------------------------------------------------*/
+.nav__button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media all and (max-width: 767px) {
+  .nav__actions li:nth-child(1),
+  .nav__actions li:nth-child(2),
+  .nav__actions li:nth-child(3) {
+    display: none;
+  }
+  .nav__actions {
+    min-width: 145px;
+    padding-left: 0;
+  }
+    .nav__actions li:nth-child(4)::before {
+    visibility: hidden;
+  }
+}
+
+@media all and (min-width: 1120px) {
+  .nav {
+    display: none;
+  }
+}
+/*----Меню на экране больше 1120px----------------------------------------------------*/
+.services {
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+}
+.services__headline h1 {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.services__headline h1::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("/img/highlight.png");
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  width: 4px;
+  height: 45px;
+}
+
+.services__actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 300px;
+}
+/*----Убираем видимость меню для экрана меньше 1120px----------------------------------------------------*/
+@media all and (max-width: 1120px) {
+  .services__actions {
+    display: none;
+  }
+}
+/*------*/
+.services__actions_inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.services__actions_inline > span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.services__actions_inline > img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+
+.services__actions_inline > button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.menu-scroll ul {
+  list-style: none;
+  min-width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  height: 62px;
+  padding-left: 10px;
+}
+
+.menu-scroll ul::-webkit-scrollbar {
+  width: 0;
+}
+
+.menu-scroll ul li {
+  height: 31px;
+  flex-shrink: 0;
+  margin: 11px 4px 11px;
+  padding: 7px 10px 0;
+}
+.menu-scroll {
+  margin-left:12px;
+}
+
+/* .menu-scroll ul li:nth-child(1) {
+border: 2px solid #41f6d7;
+border-radius: 4px;
+background: white; 
+} */
+@media all and (max-width: 1131px) {
+  .menu-scroll ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .menu-scroll ul::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.menu-scroll ul li:hover {
+  outline: 2px solid #41f6d7;
+  border-radius: 4px;
+}
+
+.menu-scroll a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*----Оформляем основной раздел---------------------------------------------------------------------*/
+
+.main {
+  display: flex;
+}
+
+@media all and (max-width: 767px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main__text-container {
+  height: 145px;
+  overflow: hidden;
+  margin-left: 24px;
+}
+
+.main__image-container img {
+  height: auto;
+}
+
+@media all and (max-width: 1119px) {
+  .main__image-container img {
+    height: 207px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .main__image-container img {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+  }
+}
+.main__read-more {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 20px;
+  color: #1B1C21;
+  font-weight: bold;
+  font-style: normal;
+}
+.main__read-more::before {
+  content: "";
+  display: inline-block;
+  background-image: url("/img/expand.svg");
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  width: 29px;
+  height: 25px;
+}
+
+
+.main__read-more > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
