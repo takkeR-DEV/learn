@@ -280,11 +280,11 @@ body {
   margin-left:12px;
 }
 
-.menu-scroll ul li:nth-child(1) {
+/* .menu-scroll ul li:nth-child(1) {
 border: 2px solid #41f6d7;
 border-radius: 4px;
 background: white; 
-}
+} */
 @media all and (max-width: 1131px) {
   .menu-scroll ul {
     flex-wrap: nowrap;
