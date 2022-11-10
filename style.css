@@ -147,15 +147,29 @@ body {
     .nav__actions li:nth-child(4)::before {
     visibility: hidden;
   }
-  .nav__actions li:nth-of-type(4) button {
+  /* .nav__actions li:nth-of-type(4) button {
     background-image: url("img/repair.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
     margin-left: -40px;
-  }
+  } */
   .nav__burger img {
     margin-left: 15px;
+  }
+}
+@media all and (max-width: 320px) {
+  .nav__actions li:nth-child(4)::before {
+    visibility: visible;
+  }
+  .nav__actions li:nth-child(4)::before {
+    display: inline-block;
+    align-self: center;
+    content: "";
+    width: 2px;
+    height: 30px;
+    background: #eaeaea;
+    margin: 0 18px 5px 10px;
   }
 }
 
