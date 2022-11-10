@@ -5,10 +5,10 @@
   font-style: normal;
 }
 @font-face {
-font-family: 'TT Lakes';
-src: url('fonts/TTLakes/TTLakes-DemiBold.ttf');
-font-weight: bold;
-font-style: normal;
+  font-family: 'TT Lakes';
+  src: url('fonts/TTLakes/TTLakes-DemiBold.ttf');
+  font-weight: bold;
+  font-style: normal;
 }
 @font-face {
 	font-family: 'TT Lakes';
