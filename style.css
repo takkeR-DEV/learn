@@ -328,6 +328,10 @@ background: white;
   margin-left: 24px;
 }
 
+.main__text-container p{
+  margin-top: 0px;
+}
+
 .main__image-container img {
   height: auto;
 }
