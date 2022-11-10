@@ -51,6 +51,7 @@ body {
 /*----Ровняем лого CPS----------------------------------------------------*/
 .nav__burger img {
   margin-bottom: 5px;
+
 }
 
 @media all and (min-width: 768px) {
@@ -140,11 +141,18 @@ body {
     display: none;
   }
   .nav__actions {
-    min-width: 145px;
+    min-width: 90px;
     padding-left: 0;
   }
-  .nav__actions li:nth-child(4)::before {
+    .nav__actions li:nth-child(4)::before {
     visibility: hidden;
+  }
+  .nav__actions li:nth-of-type(4) button {
+    background-image: url("img/repair.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-left: -40px;
   }
 }
 
@@ -170,7 +178,7 @@ body {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  background-image: url("img/highlight.png");
+  background-image: url("/img/highlight.png");
   background-repeat: no-repeat;
   margin-right: 20px;
   width: 4px;
@@ -219,7 +227,6 @@ body {
 
 .menu-scroll ul {
   list-style: none;
-  min-width: 320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -242,14 +249,14 @@ body {
   padding: 7px 10px 0;
 }
 .menu-scroll {
-  margin-left: 12px;
+  margin-left:12px;
 }
 
-/* .menu-scroll ul li:nth-child(1) {
+.menu-scroll ul li:nth-child(1) {
 border: 2px solid #41f6d7;
 border-radius: 4px;
 background: white; 
-} */
+}
 @media all and (max-width: 1131px) {
   .menu-scroll ul {
     flex-wrap: nowrap;
@@ -316,7 +323,7 @@ background: white;
   background-color: transparent;
   cursor: pointer;
   padding: 20px;
-  color: #1b1c21;
+  color: #1B1C21;
   font-weight: bold;
   font-style: normal;
 }
@@ -330,7 +337,9 @@ background: white;
   height: 25px;
 }
 
+
 .main__read-more > img {
   display: inline-block;
   vertical-align: middle;
 }
+
