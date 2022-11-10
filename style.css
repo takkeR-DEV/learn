@@ -358,7 +358,7 @@ background: white;
 .main__read-more::before {
   content: "";
   display: inline-block;
-  background-image: url("/img/expand.svg");
+  background-image: url("img/expand.svg");
   vertical-align: middle;
   background-repeat: no-repeat;
   width: 29px;
