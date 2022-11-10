@@ -178,7 +178,7 @@ body {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  background-image: url("/img/highlight.png");
+  background-image: url("img/highlight.png");
   background-repeat: no-repeat;
   margin-right: 20px;
   width: 4px;
