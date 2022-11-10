@@ -51,7 +51,7 @@ body {
 /*----Ровняем лого CPS----------------------------------------------------*/
 .nav__burger img {
   margin-bottom: 5px;
-  margin-left: 20px;
+  margin-left: 35px;
 }
 
 @media all and (min-width: 768px) {
@@ -62,7 +62,7 @@ body {
     width: 2px;
     height: 30px;
     background: #eaeaea;
-    margin: 5px 10px 5px 52px;
+    margin: 5px 10px 5px 55px;
   }
   /* .nav__burger img {
     margin-left: 25px;
@@ -153,6 +153,9 @@ body {
     width: 40px;
     height: 40px;
     margin-left: -40px;
+  }
+  .nav__burger img {
+    margin-left: 15px;
   }
 }
 
