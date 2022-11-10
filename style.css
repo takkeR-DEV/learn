@@ -165,16 +165,20 @@ body {
 .services {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 55px;
+  margin-top: 24px;
 }
 .services__headline h1 {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
   font-style: normal;
   margin-bottom: 10px;
+  color: #1B1C21;
+  margin-bottom: 18px;
 }
 
-.services__headline h1::before {
+/* .services__headline h1::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -183,6 +187,16 @@ body {
   margin-right: 20px;
   width: 4px;
   height: 45px;
+} */
+.services__headline h1::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  border-right:4px solid #41f6d7;
+  margin-right: 20px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 45px;
 }
 
 .services__actions {
@@ -190,6 +204,20 @@ body {
   justify-content: space-evenly;
   align-items: center;
   min-width: 300px;
+}
+.services__actions div:nth-of-type(1) button {
+  background-image: url("img/repair.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+.services__actions div:nth-of-type(2) button {
+  background-image: url("img/checkstatus.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
 }
 /*----Убираем видимость меню для экрана меньше 1120px----------------------------------------------------*/
 @media all and (max-width: 1120px) {
