@@ -67,21 +67,22 @@ body {
   /* .nav__burger img {
     margin-left: 25px;
   } */
+  .after::before {
+    display: inline-block;
+    align-self: center;
+    content: "";
+    width: 2px;
+    height: 30px;
+    background: #eaeaea;
+    margin: 5px 10px 5px -57px;
+  }
 }
 /*----Убираем точки li----------------------------------------------------*/
 .nav ul {
   list-style: none;
 }
 /*----Добавляем перегородку перед repair----------------------------------------------------*/
-.nav__actions li:nth-child(4)::before {
-  display: inline-block;
-  align-self: center;
-  content: "";
-  width: 2px;
-  height: 30px;
-  background: #eaeaea;
-  margin: 0 10px 5px 10px;
-}
+
 /*----Flex для правой колонки (column)----------------------------------------------------*/
 .nav__actions {
   display: flex;
@@ -117,7 +118,7 @@ body {
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
-  margin-left: 5px;
+  margin-left: 20px;
 }
 .nav__actions li:nth-of-type(5) button {
   background-image: url("img/checkstatus.svg");
@@ -144,9 +145,9 @@ body {
     min-width: 90px;
     padding-left: 0;
   }
-  .nav__actions li:nth-child(4)::before {
+  /* .nav__actions li:nth-child(4)::before {
     visibility: hidden;
-  }
+  } */
   /* .nav__actions li:nth-of-type(4) button {
     background-image: url("img/repair.svg");
     background-repeat: no-repeat;
@@ -337,6 +338,7 @@ background: white;
     display: flex;
     flex-direction: column;
   }
+  
 }
 
 .main__text-container {
@@ -358,13 +360,27 @@ background: white;
     height: 207px;
   }
 }
-
+@-moz-document url-prefix()
+{
+  .nav__actions li:nth-of-type(4) button {
+    margin-top: 6px;
+  }
+  
+}
 @media all and (max-width: 767px) {
   .main__image-container img {
     width: 100%;
     height: 100%;
     min-width: 320px;
   }
+  @-moz-document url-prefix()
+{
+  .nav__actions li:nth-of-type(4) button {
+    margin-top: 0px;
+    margin-right: 5px;
+  }
+  
+}
 }
 .main__read-more {
   padding: 0;
@@ -390,3 +406,4 @@ background: white;
   display: inline-block;
   vertical-align: middle;
 }
+
