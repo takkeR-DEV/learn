@@ -1,6 +1,6 @@
-let switcher = document.querySelector('.trademarks__wrapper:nth-child(2)');
-let switcherTwo = document.querySelector('.trademarks__main');
-let switcherThree = document.querySelectorAll('.trademarks__logo');
+const switcher = document.querySelector('.trademarks__wrapper:nth-child(2)');
+const switcherTwo = document.querySelector('.trademarks__main');
+const switcherThree = document.querySelectorAll('.trademarks__logo');
 let isSviperInit = false;
 
 function swiperInit() {
@@ -38,17 +38,13 @@ return swiper;
 
 // ----------------
 
-let mobile = window.matchMedia("(min-width: 0px) and (max-width: 767px)");
+const mobile = window.matchMedia("(min-width: 0px) and (max-width: 767px)");
 
-function changeClasses () {
-  // console.log("значение1 -" + mobile.matches)	
+function changeClasses () {	
  	if (mobile.matches == true) {
- 		// console.log("ширина экрана " + window.screen.width);
- 		// console.log('Ширина экрана меньше или равна 767px');
  		switcher.classList.add('swiper'); 
  		switcherTwo.classList.add('swiper-wrapper');
- 		for (var i=0; i<switcherThree.length; i++) {
-      console.log("длина " + i)
+ 		for (let i=0; i<switcherThree.length; i++) {
  			switcherThree[i].classList.add('swiper-slide');
  		}
  
@@ -60,7 +56,7 @@ function changeClasses () {
  	} else {
  		switcher.classList.remove('swiper');
  		switcherTwo.classList.remove('swiper-wrapper');
- 		for (var i=0; i<switcherThree.length; i++) {
+ 		for (let i=0; i<switcherThree.length; i++) {
  			switcherThree[i].classList.remove('swiper-slide');
  		}
 
