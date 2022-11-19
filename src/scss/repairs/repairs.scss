@@ -1,0 +1,225 @@
+.repairs {
+  max-width: 1120px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "TT Lakes";
+  background: #f7f7f7;
+  margin: 0;
+}
+.repairs__header {
+  min-height: 56px;
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+
+.repairs__header h2 {
+  display: inline-block;
+  opacity: 0.6;
+  font-weight: normal;
+  font-size: 16px;
+}
+/* .repairs __wrapper {
+  margin-left: 16px;
+} */
+.repairs__wrapper {
+  position: relative;
+  margin-left: 16px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.repairs__main {
+  padding: 20px 0 0 0;
+  margin-bottom: 24px;
+}
+.repairs__logo {
+  flex-shrink: 0;
+  width: 240px;
+  height: 160px;
+  border: 2px solid #e9e9e9;
+  border-radius: 5px;
+  background: #ffffff;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  /* тут отступ пагинации */
+  margin: 0 0px 16px 0;   
+  padding: 0 15px 0 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  min-width: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+// .repairs__logo:last-child {
+//   visibility: hidden;
+// }
+.repairs__hedden {
+  width: 240px;
+  height: 160px;
+}
+
+.repairs__text {
+  font-size: 16px;
+  margin-bottom: auto;
+}
+@media all and (max-width: 767px) {
+  .repairs__wrapper:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    z-index: 1;
+    width: 50px;
+    height: 70px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 80%
+    );
+  }
+}
+.repairs__button {
+  margin-top: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+// .repairs__button > img {
+//   height: 40px;
+// }
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+/* .repairs__main {
+  margin-right: 16px;
+} */
+@media all and (min-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
+  /* .repairs__button-read-more {
+    display: none;
+  } */
+  .repairs__main {
+		display: flex;
+		/* flex-direction: row; */
+		flex-wrap: wrap;
+		/* align-content: flex-start; */
+    justify-content: space-between;
+    align-items: center;
+		/* max-height: 170px;	 */
+		overflow: hidden;
+    /* margin-left: 50px; */
+    max-height: 170px;	
+    // overflow: hidden;
+    transition: max-height 0.4s ease-in-out; 
+
+  }
+  .repairs__wrapper {
+    margin-left: 24px;
+    margin-right: 24px;
+    
+  
+  }
+  .repairs__logo {
+    width: 224px;
+    height: 160px;
+  }
+  .repairs {
+    margin: 0 auto;
+  }
+  .repairs__hedden {
+    width: 224px;
+    height: 160px;
+  }
+}
+.repairs__main_open {
+  max-height: 340px;
+  transition: max-height 0.4s ease-in-out;
+}
+@media all and (max-width: 767px) {
+  .repairs__button-read-more {
+    display: none;
+  }
+
+
+}
+.repairs__button {
+  background-image:url("/../../img/swiper/btn/go.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.repairs__button-read-more {
+	padding: 0;
+ 	border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: medium;
+  color:#1B1C21;
+}
+
+.repairs__button-read-more>span {
+	display: inline-block;
+	vertical-align: middle;
+	transform: rotate(0deg);
+	transition-property: transform;
+	transition-duration: 0.8s;
+	transition-timing-function: ease-in-out;
+	opacity: 1;
+  transform-origin: 50% 50%;
+}
+
+.repairs__button-read-more>p {
+	display: inline-block;
+	vertical-align: middle;
+	// opacity: 0.6;
+}
+
+.repairs__button-read-more_rotated>span {
+	transform: rotate(180deg);
+	transition-property: transform;
+	transition-duration: 0.8s;
+	transition-timing-function: ease-in-out;
+  transform-origin: 50% 50%;
+}
+.repairs__button-expand {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  background-image: url("/../../img/swiper/btn/expand.svg");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 24px;
+}
+
+@media all and (max-width: 767px) {
+	.repairs__button-read-more
+	 {
+		display: none;
+	}
+}
+
+@media all and (min-width: 1120px) {
+  .repairs__logo {
+    width: 240px;
+    height: 160px;
+  }
+  .repairs__wrapper {
+    margin-left: 32px;
+    margin-right: 23px;
+}
+.repairs__hidden {
+  width: 240px;
+}
+}
+/* .repairs__main {
+  margin-left:80px;
+} */
+  

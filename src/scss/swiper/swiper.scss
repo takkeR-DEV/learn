@@ -1,0 +1,224 @@
+.trademarks {
+  max-width: 1120px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "TT Lakes";
+  background: #f7f7f7;
+  margin: 0;
+}
+.trademarks__header {
+  min-height: 56px;
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+
+.trademarks__header h2 {
+  display: inline-block;
+  opacity: 0.6;
+  font-weight: normal;
+  font-size: 16px;
+}
+/* .trademarks__wrapper {
+  margin-left: 16px;
+} */
+.trademarks__wrapper {
+  margin-left: 16px;
+  margin-bottom: 20px;
+
+}
+.trademarks__main {
+  padding: 20px 0 0 0;
+}
+.trademarks__logo {
+  flex-shrink: 0;
+  width: 224px;
+  height: 72px;
+  border: 2px solid #e9e9e9;
+  border-radius: 5px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* тут отступ пагинации */
+  margin: 0 10px 16px 0;   
+  padding: 0 15px 0 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  min-width: 0px;
+}
+.trademarks__logo:last-child {
+  visibility: hidden;
+}
+// .trademarks__logo > img {
+//   max-height: 45px;
+//   max-width: 120px;
+// }
+@media all and (max-width: 767px) {
+  .trademarks__wrapper:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    z-index: 1;
+    width: 50px;
+    height: 70px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 80%
+    );
+  }
+}
+.trademarks__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+/* .trademarks__main {
+  margin-right: 16px;
+} */
+.trademarks__hidden {
+  width: 240px;
+  height: 72px;
+  margin: 0 10px 16px 0;
+}
+@media all and (min-width: 768px) {
+  .trademarks__hidden {
+    width: 224px;
+    height: 72px;
+    margin: 0 10px 16px 0;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  /* .trademarks__button-read-more {
+    display: none;
+  } */
+  .trademarks__main {
+		display: flex;
+		/* flex-direction: row; */
+		flex-wrap: wrap;
+		/* align-content: flex-start; */
+    justify-content: space-between;
+		/* max-height: 170px;	 */
+		overflow: hidden;
+    /* margin-left: 50px; */
+    max-height: 170px;	
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out; 
+
+  }
+  .trademarks__wrapper {
+    margin-left: 24px;
+    margin-right: 24px;
+    
+  
+  }
+  /* .trademarks__wrapper {
+    margin-left: 150px;
+  } */
+  .trademarks {
+    margin: 0 auto;
+  }
+  /* .trademarks__main_hidden {
+    max-height: 170px;	
+    overflow: hidden;
+    transition: max-height 0.8s ease-in-out; 
+  } */
+}
+.trademarks__main_open {
+  max-height: 250px;
+  transition: max-height 0.4s ease-in-out;
+}
+@media all and (max-width: 767px) {
+  .trademarks__button-read-more {
+    display: none;
+  }
+  .trademarks__logo {
+  margin-bottom: 40px;
+  }
+  /* .trademarks__wrapper {
+    margin-left: 16px;
+  } */
+}
+.trademarks__button {
+  background-image:url("/../../img/swiper/btn/go.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.trademarks__button-read-more {
+	padding: 0;
+ 	border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: medium;
+  color:#1B1C21;
+}
+
+.trademarks__button-read-more>span {
+	display: inline-block;
+	vertical-align: middle;
+	transform: rotate(0deg);
+	transition-property: transform;
+	transition-duration: 0.8s;
+	transition-timing-function: ease-in-out;
+	opacity: 1;
+  transform-origin: 50% 50%;
+}
+
+.trademarks__button-read-more>p {
+	display: inline-block;
+	vertical-align: middle;
+	// opacity: 0.6;
+}
+
+.trademarks__button-read-more_rotated>span {
+	transform: rotate(180deg);
+	transition-property: transform;
+	transition-duration: 0.8s;
+	transition-timing-function: ease-in-out;
+  transform-origin: 50% 50%;
+}
+.trademarks__button-expand {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  background-image: url("/../../img/swiper/btn/expand.svg");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 24px;
+}
+
+@media all and (max-width: 767px) {
+	.trademarks__button-read-more
+	 {
+		display: none;
+	}
+}
+@media all and (min-width: 1120px) {
+  .trademarks__logo {
+    width: 240px;
+    height: 72px;
+  }
+  .trademarks__wrapper {
+    margin-left: 32px;
+    margin-right: 23px;
+}
+.trademarks__hidden {
+  width: 240px;
+}
+}
+/* .trademarks__main {
+  margin-left:80px;
+} */
+  
