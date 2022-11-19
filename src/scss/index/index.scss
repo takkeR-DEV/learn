@@ -42,7 +42,7 @@ body {
   margin-left: 5px;
 }
 .nav__burger button {
-  background-image: url("/../../img/burger.svg");
+  background-image: url("../img/burger.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
@@ -102,35 +102,35 @@ body {
 }
 /* перенос из html в bg */
 .nav__actions li:nth-of-type(1) button {
-  background-image: url("/../../img/call.svg");
+  background-image: url("../img/call.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
   margin-left: 5px;
 }
 .nav__actions li:nth-of-type(2) button {
-  background-image: url("/../../img/chat.svg");
+  background-image: url("../img/chat.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
   margin-left: 5px;
 }
 .nav__actions li:nth-of-type(3) button {
-  background-image: url("/../../img/profile.svg");
+  background-image: url("../img/profile.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
   margin-left: 5px;
 }
 .nav__actions li:nth-of-type(4) button {
-  background-image: url("/../../img/repair.svg");
+  background-image: url("../img/repair.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
   margin-left: 20px;
 }
 .nav__actions li:nth-of-type(5) button {
-  background-image: url("/../../img/checkstatus.svg");
+  background-image: url("../img/checkstatus.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
@@ -209,14 +209,14 @@ body {
   min-width: 300px;
 }
 .services__actions div:nth-of-type(1) button {
-  background-image: url("/../../img/repair.svg");
+  background-image: url("../img/repair.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
   margin-left: 5px;
 }
 .services__actions div:nth-of-type(2) button {
-  background-image: url("/../../img/checkstatus.svg");
+  background-image: url("../img/checkstatus.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
@@ -433,7 +433,7 @@ background: white;
 .main__button-expand {
   display: inline-block;
   transform-origin: 50% 50%;
-  background-image: url("/../../img/swiper/btn/expand.svg");
+  background-image: url("../img/swiper/btn/expand.svg");
   background-repeat: no-repeat;
   width: 23px;
   height: 24px;
