@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
+    background: $white-color;
     min-height: 85px;
   }
   &__button {
@@ -62,13 +62,13 @@
     flex-shrink: 0;
     flex-grow: 0;
   }
-  & ul {
+  ul {
     padding-left: 0px;
     list-style: none;
   }
   &__nav ul li {
     position: relative;
-    color: #1b1c21;
+    color: $graphite-color;
     font-size: 16px;
     line-height: 24px;
   }
@@ -88,7 +88,7 @@
   }
   &__nav a {
     text-decoration: none;
-    color: black;
+    color: $graphite-color;
     display: inline-block;
     vertical-align: middle;
     font-style: medium;
