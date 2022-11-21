@@ -15,11 +15,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-@media all and (min-width: 1440px) {
-  .wrapper-fullPage {
-    display: flex;
-  }
-}
 .wrapper {
   max-width: 1120px;
   margin: 0 auto;
@@ -330,6 +325,7 @@ background: white;
   // height: 145px;
   // overflow: hidden;
   margin-left: 24px;
+  margin-right: 10px;
 }
 
 .main__text-container p {
@@ -448,4 +444,43 @@ background: white;
   color:#1B1C21;
   margin-left: 20px;
   // opacity: 1;
+}
+.wrapper__blur {
+  filter: blur(4px);
+}
+.wrapper__blur2 {
+  filter: blur(4px);
+}
+@media all and (min-width: 1440px) {
+  .wrapper-fullPage {
+    display: flex;
+  }
+}
+@media all and (min-width: 1120px) {
+  .wrapper-fullPage {
+    display: flex;
+  }
+}
+
+.blur {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // display: none;
+  background-color: rgba(255,255,255,0.9)
+}
+.blur2 {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // display: none;
+  background-color: rgba(255,255,255,0.6)
 }
