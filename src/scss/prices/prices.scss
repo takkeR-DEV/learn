@@ -294,5 +294,10 @@ table {
   display: inline-block;
   padding: 3px;
   transform: rotate(-45deg);
-  
-  }
+}
+.table-prices__button:hover {
+	filter: opacity(0.6);
+	transition-property: filter;
+	transition-duration: 0.25s;
+	transition-timing-function: linear; 
+}
