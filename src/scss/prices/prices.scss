@@ -146,11 +146,8 @@
     }
   }
 }
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-}
 .table-prices {
+  margin-left: 34px;
   &__wrapper {
     width: 100%;
     border-spacing: 0;
@@ -274,4 +271,8 @@
     margin-left: 32px;
     margin-right: 22px;
   }
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
 }
