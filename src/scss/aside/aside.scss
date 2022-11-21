@@ -223,7 +223,8 @@
     background-color: white;
   }
   .aside {
-    position: static;
+    position: sticky;
+    z-index: 1;
     box-shadow:none;
     height: 100vh;
   }
