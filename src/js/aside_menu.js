@@ -47,7 +47,8 @@ for(item of asideCallbackBtn) {
   item.addEventListener('click', function() {
   callback.style.right = "0px"
   aside.style.left = ""
-  blur.style.display = "block";  
+  blur.style.display = "block"; 
+  document.getElementById("callBack__phone").focus({preventScroll:true}); 
 });
 }
 
@@ -70,7 +71,8 @@ for(item of asideFeedBackBtn) {
   item.addEventListener('click', function() {
   feedback.style.right = "0px"
   aside.style.left = ""
-  blur.style.display = "block";  
+  blur.style.display = "block"; 
+  document.getElementById("login-namt").focus({preventScroll:true});  
   });  
 }
 
