@@ -61,13 +61,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: white;
+	background: $white-color;
 	min-height: 85px;
 }
 
-.feedBack__header {
-	
-}
 
 .feedBack__header h2 {
 	font-weight: 800;
@@ -176,8 +173,8 @@
 .feedBack__send .feedBack__button {
 	width: 136px;
 	height: 32px;
-	background-color:#FF3E79;
-  color:#ffffff;
+	background-color: $callBack-references-color;
+  color: $white-color;
   font-weight: bold;
   font-style: bold;
   font-size: 12px;
@@ -190,7 +187,7 @@
 .feedBack__send .feedBack__button::after {
   content: "";
   margin-left:17px;
-  border: solid #FFFFFF;
+  border: solid $white-color;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;

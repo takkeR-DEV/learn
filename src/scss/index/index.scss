@@ -4,7 +4,7 @@ html {
 /*----Оболочка----------------------------------------------------*/
 body {
   font-family: "TT Lakes";
-  background: #f8f8f8;
+  background: $platinum-color-gray;
   min-width: 320px;
   margin: 0;
   font-style: light;
@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: $white-color;
   min-width: 320px;
   min-height: 85px;
 }
@@ -56,7 +56,7 @@ body {
     content: "";
     width: 2px;
     height: 30px;
-    background: #eaeaea;
+    background: $pale-blue-color;
     margin: 5px 10px 5px 55px;
   }
   /* .nav__burger img {
@@ -68,7 +68,7 @@ body {
     content: "";
     width: 2px;
     height: 30px;
-    background: #eaeaea;
+    background: $pale-blue-color;
     margin: 5px 10px 5px -57px;
   }
   /* .nav__button_margin::before {
@@ -172,7 +172,7 @@ body {
   font-weight: bold;
   font-style: normal;
   margin-bottom: 10px;
-  color: #1b1c21;
+  color: $graphite-color;
   margin-bottom: 18px;
 }
 
@@ -190,7 +190,7 @@ body {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  border-right: 4px solid #41f6d7;
+  border-right: 4px solid $turquoise-color;
   margin-right: 20px;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -296,13 +296,13 @@ background: white;
 }
 
 .menu-scroll ul li:hover {
-  outline: 2px solid #41f6d7;
+  outline: 2px solid $turquoise-color;
   border-radius: 4px;
 }
 
 .menu-scroll a {
   text-decoration: none;
-  color: #1B1C21;
+  color: $graphite-color;
   display: inline-block;
   vertical-align: middle;
 }
@@ -441,7 +441,7 @@ background: white;
   cursor: pointer;
   font-size: 16px;
   font-style: medium;
-  color:#1B1C21;
+  color:$graphite-color;
   margin-left: 20px;
   // opacity: 1;
 }

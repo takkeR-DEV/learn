@@ -3,7 +3,7 @@
   left: -340px;
   top: 0;
   z-index: 3;
-  background-color: white;
+  background-color: $white-color;
   width: 320px;
   height: 100%;
   min-height: 620px;
@@ -76,7 +76,7 @@
 .aside__nav ul li:hover::before {
   display: inline-block;
   vertical-align: middle;
-  border-right: 4px solid #41f6d7;
+  border-right: 4px solid $turquoise-color;
   border-top-right-radius: 30%;
   border-bottom-right-radius: 30%;
   height: 32px;
@@ -155,7 +155,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #41f6d7;
+  background-color: $turquoise-color;
   content: "";
   transition: width 0.3s ease-out;
 }
@@ -220,7 +220,7 @@
 @media all and (min-width: 1120px) {
   .aside__full-wrapper {
     height: calc(100vh+400px);
-    background-color: white;
+    background-color: $white-color;
   }
   .aside {
     position: sticky;
