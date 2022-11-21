@@ -408,6 +408,18 @@ background: white;
   height: 200vh;
   background-color: rgba(255, 255, 255, 0.9); }
 
+.nav__button:hover {
+  filter: opacity(0.6);
+  transition-property: filter;
+  transition-duration: 0.25s;
+  transition-timing-function: linear; }
+
+.services__actions_inline button:hover {
+  filter: opacity(0.6);
+  transition-property: filter;
+  transition-duration: 0.25s;
+  transition-timing-function: linear; }
+
 .aside {
   position: fixed;
   left: -340px;
@@ -601,6 +613,12 @@ background: white;
     margin-top: 0px;
     flex-shrink: 1;
     flex-grow: 1; } }
+
+.aside__button:hover {
+  filter: opacity(0.6);
+  transition-property: filter;
+  transition-duration: 0.25s;
+  transition-timing-function: linear; }
 
 @media all and (min-width: 1120px) {
   .aside__full-wrapper {
@@ -801,6 +819,12 @@ background: white;
 /* .trademarks__main {
   margin-left:80px;
 } */
+.trademarks__logo:hover {
+  filter: opacity(0.6);
+  transition-property: filter;
+  transition-duration: 0.25s;
+  transition-timing-function: linear; }
+
 .repairs {
   max-width: 1120px;
   min-width: 320px;
@@ -984,6 +1008,12 @@ background: white;
 /* .repairs__main {
   margin-left:80px;
 } */
+.repairs__logo:hover {
+  filter: opacity(0.6);
+  transition-property: filter;
+  transition-duration: 0.25s;
+  transition-timing-function: linear; }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -1277,6 +1307,12 @@ table {
   padding: 3px;
   transform: rotate(-45deg); }
 
+.table-prices__button:hover {
+  filter: opacity(0.6);
+  transition-property: filter;
+  transition-duration: 0.25s;
+  transition-timing-function: linear; }
+
 .callBack {
   position: fixed;
   right: -550px;
@@ -1405,10 +1441,24 @@ table {
   height: 40px; }
 
 .callBack__send .callBack__button {
-  background-image: url(./static/Rectangle.svg);
-  background-repeat: no-repeat;
   width: 136px;
-  height: 32px; }
+  height: 32px;
+  background-color: #FF3E79;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: bold;
+  font-size: 12px;
+  border-radius: 16px;
+  cursor: pointer; }
+
+.callBack__send .callBack__button::after {
+  content: "";
+  margin-left: 17px;
+  border: solid #FFFFFF;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg); }
 
 @media all and (min-width: 768px) {
   .callBack {
@@ -1571,10 +1621,24 @@ table {
   height: 40px; }
 
 .feedBack__send .feedBack__button {
-  background-image: url(./static/Rectangle.svg);
-  background-repeat: no-repeat;
   width: 136px;
-  height: 32px; }
+  height: 32px;
+  background-color: #FF3E79;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: bold;
+  font-size: 12px;
+  border-radius: 16px;
+  cursor: pointer; }
+
+.feedBack__send .feedBack__button::after {
+  content: "";
+  margin-left: 17px;
+  border: solid #FFFFFF;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg); }
 
 @media all and (min-width: 768px) {
   .feedBack__open {
