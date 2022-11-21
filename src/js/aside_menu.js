@@ -40,8 +40,7 @@ blur.addEventListener('click', function() {
 
 const asideCallbackBtn = document.querySelectorAll('.aside__button-phone-open');
 const callback = document.querySelector('.callBack');
-const callbackClose = document.querySelector('.callBack__nav .callBack__close')
-const callbackCloseFull = document.querySelector('.callBack__nav-full .callBack__close')
+const callbackClose = document.querySelectorAll('.callBack__close')
 // const callbackClose2 = document.querySelector('.callBack__close2')
 
 for(item of asideCallbackBtn) {
@@ -49,27 +48,23 @@ for(item of asideCallbackBtn) {
   callback.style.right = "0px"
   aside.style.left = ""
   blur.style.display = "block";  
-});}
+});
+}
 
-
-callbackClose.addEventListener('click', function () {
+for(item of callbackClose) {
+  item.addEventListener('click', function () {
   blur.style.display = "none";
   callback.style.right = ""
 });
+}
 
-callbackCloseFull.addEventListener('click', function () {
-  blur.style.display = "none";
-  callback.style.right = ""
-});
 
 
 // открытие/закрытие feedback
 
 const asideFeedBackBtn = document.querySelectorAll('.aside__button-msg-open');
 const feedback = document.querySelector('.feedBack');
-const feedbackClose = document.querySelector('.feedBack__nav .feedBack__close')
-const feedbackCloseFull = document.querySelector('.feedBack__nav-full .feedBack__close')
-// const callbackClose2 = document.querySelector('.callBack__close2')
+const feedbackClose = document.querySelectorAll('.feedBack__close')
 
 for(item of asideFeedBackBtn) {
   item.addEventListener('click', function() {
@@ -78,15 +73,12 @@ for(item of asideFeedBackBtn) {
   blur.style.display = "block";  
   });  
 }
-feedbackClose.addEventListener('click', function () {
-  // console.log('я тут');
-  blur.style.display = "none";
-  feedback.style.right = ""
-});
 
-feedbackCloseFull.addEventListener('click', function () {
-  // console.log('я тут');
-  blur.style.display = "none";
-  feedback.style.right = ""
-});
+for(item of feedbackClose){
+  item.addEventListener('click', function () {
+    // console.log('я тут');
+    blur.style.display = "none";
+    feedback.style.right = ""
+  });
+}
 
