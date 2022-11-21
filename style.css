@@ -31,12 +31,12 @@ body {
   height: 100vh; }
 
 .wrapper-fullPage {
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto; }
 
 .wrapper {
-  max-width: 1120px;
-  margin: 0 auto; }
+  max-width: 1600px;
+  margin: 0; }
 
 /*----Меню в шапке----------------------------------------------------*/
 .nav {
@@ -291,7 +291,11 @@ background: white;
 
 .menu-scroll ul li:hover {
   outline: 2px solid #41f6d7;
-  border-radius: 4px; }
+  border-radius: 4px;
+  filter: opacity(0.6);
+  transition-property: filter;
+  transition-duration: 0.25s;
+  transition-timing-function: linear; }
 
 .menu-scroll a {
   text-decoration: none;
@@ -635,7 +639,6 @@ background: white;
 .trademarks {
   max-width: 1120px;
   min-width: 320px;
-  margin: 0 auto;
   font-family: "TT Lakes";
   background: #f7f7f7;
   margin: 0; }
@@ -738,8 +741,6 @@ background: white;
   /* .trademarks__wrapper {
     margin-left: 150px;
   } */
-  .trademarks {
-    margin: 0 auto; }
   /* .trademarks__main_hidden {
     max-height: 170px;	
     overflow: hidden;
@@ -829,7 +830,6 @@ background: white;
 .repairs {
   max-width: 1120px;
   min-width: 320px;
-  margin: 0 auto;
   font-family: "TT Lakes";
   background: #f7f7f7;
   margin: 0; }
@@ -934,8 +934,6 @@ background: white;
   .repairs__logo {
     width: 224px;
     height: 160px; }
-  .repairs {
-    margin: 0 auto; }
   .repairs__hedden {
     width: 224px;
     height: 160px; } }
