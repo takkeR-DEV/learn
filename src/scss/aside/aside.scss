@@ -25,6 +25,19 @@
     background: $white-color;
     min-height: 85px;
   }
+  &__open {
+    left: 0;
+    transition-property: transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out;
+  }
+  
+  &__hidden {
+    transform: translateX(-340px);
+    transition-property: transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out;
+  }
   &__button {
     padding: 0;
     border: none;
@@ -32,7 +45,7 @@
     cursor: pointer;
   }
   &__header button:nth-of-type(1) {
-    background-image: url('../img/burger.svg');
+    background-image: url('../img/burgerClose.svg');
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;

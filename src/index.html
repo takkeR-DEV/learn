@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> -->
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -128,7 +128,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="menu-scroll-full">
           <div class="menu-scroll">
             <ul>
               <li><a href="#" title="что-то">Ремонтируемые устройства</a></li>
@@ -155,7 +155,7 @@
                 очередь, советуют нас родным и близким.
               </p>
             </div>
-            <button class="main__button-read-more" title="Читать далее"><span class="main__button-expand main__button-expand_rotate"></span><p class="check">Читать далее</p></button>
+            <button class="main__button-read-more" title="Читать далее"><span class="main__button-read-more-tst main__button-expand main__button-expand_rotate"></span><span class="check">Читать далее</span></button>
           </article>
           <div class="main__image-container">
             <img src="./img/signboard_full.png" />
@@ -217,7 +217,7 @@
               </div>
             </main>
             <div class="swiper-pagination"></div>
-            <button class="trademarks__button-read-more" title="Показать все"><span class="trademarks__button-expand trademarks__button-expand_rotate"></span><p class="check">Показать все</p></button>
+            <button class="trademarks__button-read-more" title="Показать все"><span class="trademarks__button-expand trademarks__button-expand_rotate"></span><span class="check">Показать все</span></button>
           </div>
         </div>
         <div class="repairs">
@@ -226,7 +226,7 @@
               <h2>РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
             </div>
           </header>
-          <div class="repairs__wrapper repairs__swiper">
+          <div class="repairs__wrapper swiper">
             <main class="repairs__main swiper-wrapper ">
               <div class="repairs__logo swiper-slide">
                 <span class="repairs__text">Ремонт ноутбуков</span>
@@ -252,7 +252,7 @@
               </div>
             </main>
             <div class="place swiper-pagination"></div>
-            <button class="repairs__button-read-more" title="Показать все"><span class="repairs__button-expand repairs__button-expand_rotate"></span><p class="check">Показать все</p></button>
+            <button class="repairs__button-read-more" title="Показать все"><span class="repairs__button-expand repairs__button-expand_rotate"></span><span class="check">Показать все</span></button>
           </div>
         </div>
         <div class="prices">
@@ -261,7 +261,7 @@
               <h2>ЦЕНЫ НА УСЛУГИ</h2>
             </div>
           </header>
-          <div class="prices__wrapper prices__swiper">
+          <div class="prices__wrapper swiper">
             <main class="prices__main swiper-wrapper ">
               <div class="prices__logo swiper-slide">
                 <div class="prices__logo-conteiner">
@@ -413,17 +413,17 @@
           <div class="feedBack__header">
             <h2>Обратная связь</h2>
           </div>
-          <form class="feedBack__form">
-            <input type="text" name="name" placeholder="Имя" autofocus id="login-namt">
-            <input type="text" name="phone" placeholder="Телефон" id="feedBack__phone">
-            <input type="text" name="email" placeholder="Электронная почта" id="login-email">
-            <textarea placeholder="Сообщение"></textarea>
+          <form class="feedBack__form" id="444" method="get" action="#">
+            <input type="text" name="name" placeholder="Имя" autofocus id="login-namt" required pattern="^[ A-Za-zА-Яа-яЁё]+$">
+            <input type="tel" pattern="^[ 0-9]+$" name="phone" placeholder="Телефон" id="feedBack__phone" required >
+            <input type="email" name="email" placeholder="Электронная почта" id="login-email" required >
+            <textarea placeholder="Сообщение" required></textarea>
           </form>
           <div class="feedBack__references">
             <p>Нажимая “отправить”, вы даете согласие на <span class="pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
           </div>
           <div class="feedBack__send">
-            <button class="feedBack__button" aria-label="Кнопка"><span>ЗАКАЗАТЬ</span></button>
+            <button form="444" class="feedBack__button" aria-label="Кнопка"><span>ОТПРАВИТЬ</span></button>
           </div>
         </div>
       </div>
@@ -440,17 +440,17 @@
         <div class="callBack__header">
           <h2>Заказать звонок</h2>
         </div>
-        <div class="callBack__form">
-          <input type="text" name="phone" placeholder="Телефон" id="callBack__phone" autofocus>
-        </div>
-        <form class="callBack__references">
-          <p>Нажимая “отправить”, вы даете согласие на <span class="pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
+        <form class="callBack__form" id="555" method="get" action="#">
+          <input type="tel" pattern="^[ 0-9]+$" name="phone" placeholder="Телефон" id="callBack__phone" autofocus required>
         </form>
+        <div class="callBack__references">
+          <p>Нажимая “отправить”, вы даете согласие на <span class="pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
+        </div>
         <div class="callBack__send">
-          <button class="callBack__button" aria-label="Конпка"><span>ЗАКАЗАТЬ</span></button>
+          <button form="555" class="callBack__button" aria-label="Конпка"><span>ОТПРАВИТЬ</span></button>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
   </body>
 </html>

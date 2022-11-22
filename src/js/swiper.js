@@ -1,7 +1,11 @@
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([ Navigation, Pagination ])
+
 const switcher = document.querySelector('.trademarks__wrapper:nth-child(2)');
 const switcherTwo = document.querySelector('.trademarks__main');
 const switcherThree = document.querySelectorAll('.trademarks__logo');
 let isSviperInit = false;
+
 
 function swiperInit() {
 const swiper = new Swiper('.swiper',{

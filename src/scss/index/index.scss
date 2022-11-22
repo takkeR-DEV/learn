@@ -12,11 +12,11 @@ body {
   height: 100vh;
 }
 .wrapper-fullPage {
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .wrapper {
-  max-width: 1600px;
+  max-width: 1120px;
   margin: 0 ;
 }
 /*----Меню в шапке----------------------------------------------------*/
@@ -166,6 +166,7 @@ body {
   align-items: center;
   height: 55px;
   margin-top: 24px;
+  max-width: 1120px;
 }
 .services__headline h1 {
   font-size: 28px;
@@ -240,7 +241,9 @@ body {
   cursor: pointer;
   margin-right: 25px;
 }
-
+.menu-scroll-full {
+  max-width: 1120px;
+}
 .menu-scroll ul {
   list-style: none;
   display: flex;
@@ -305,6 +308,7 @@ background: white;
 
 .main {
   display: flex;
+  max-width: 1120px;
 }
 
 @media all and (max-width: 767px) {
@@ -370,7 +374,7 @@ background: white;
 }
 
 
-.main__button-read-more>span {
+.main__button-read-more>span:nth-child(1)  {
 	display: inline-block;
 	vertical-align: middle;
 	transform: rotate(0deg);
@@ -381,12 +385,12 @@ background: white;
   transform-origin: 50% 50%;
 }
 
-.main__button-read-more>p {
+.main__button-read-more>span:nth-child(2) {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.main__button-read-more_rotated>span {
+.main__button-read-more_rotated>span:nth-child(1) {
 	transform: rotate(180deg);
 	transition-property: transform;
 	transition-duration: 0.8s;
@@ -410,6 +414,8 @@ background: white;
   font-style: medium;
   color:$graphite-color;
   margin-left: 20px;
+  margin-top: 8px;
+  // margin-bottom: 5px;
 }
 .wrapper__blur {
   filter: blur(4px);
@@ -427,18 +433,6 @@ background: white;
     display: flex;
   }
 }
-
-.blur {
-  display: none;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200vh;
-  background-color: rgba(255,255,255,0.9)
-}
-
 .nav__button:hover {
 	filter: opacity(0.6);
 	transition-property: filter;
@@ -452,3 +446,23 @@ background: white;
 	transition-timing-function: linear; 
 }
 
+.blur-none {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200vh;
+  background-color: rgba(255,255,255,0.9)
+}
+.blur-block {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200vh;
+  background-color: rgba(255,255,255,0.9)
+}

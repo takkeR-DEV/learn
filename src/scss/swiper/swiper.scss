@@ -129,7 +129,7 @@
     color: $graphite-color;
   }
 
-  &__button-read-more > span {
+  &__button-read-more > span:nth-child(1) {
     display: inline-block;
     vertical-align: middle;
     transform: rotate(0deg);
@@ -140,13 +140,13 @@
     transform-origin: 50% 50%;
   }
 
-  &__button-read-more > p {
+  &__button-read-more > span:nth-child(2) {
     display: inline-block;
     vertical-align: middle;
     // opacity: 0.6;
   }
 
-  &__button-read-more_rotated > span {
+  &__button-read-more_rotated > span:nth-child(1) {
     transform: rotate(180deg);
     transition-property: transform;
     transition-duration: 0.8s;
@@ -187,4 +187,9 @@
     transition-duration: 0.25s;
     transition-timing-function: linear;
   }
+
+}
+
+.swiper-pagination-bullets-dynamic {
+  z-index: 1;
 }

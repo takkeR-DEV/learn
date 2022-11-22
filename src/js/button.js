@@ -2,7 +2,7 @@
 
 const button = document.querySelector('.trademarks__button-read-more');
 const page = document.querySelector('.trademarks__main');
-let text = document.querySelector('.trademarks__button-read-more>p');
+let text = document.querySelector('.trademarks__button-read-more>span:nth-child(2)');
 
 button.addEventListener('click', function () {
 	

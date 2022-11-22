@@ -1,3 +1,5 @@
+
+
 const switcher = document.querySelector('.prices__wrapper:nth-child(2)');
 const switcherTwo = document.querySelector('.prices__main');
 const switcherThree = document.querySelectorAll('.prices__logo');

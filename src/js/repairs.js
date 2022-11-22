@@ -1,3 +1,4 @@
+
 const switcher = document.querySelector('.repairs__wrapper:nth-child(2)');
 const switcherTwo = document.querySelector('.repairs__main');
 const switcherThree = document.querySelectorAll('.repairs__logo');

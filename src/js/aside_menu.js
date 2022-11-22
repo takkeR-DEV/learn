@@ -10,30 +10,31 @@ const aside = document.querySelector('.aside');
 const asideClose = document.querySelector('.aside__close');
 
 asideButton.addEventListener('click', function () {
-  // aside.classList.add('aside__open');
-  aside.style.left = "0px"
-  blur.style.display = "block";
-  // aside.classList.remove('aside__hidden'); 
+  aside.classList.add('aside__open');
+  aside.classList.remove('aside__hidden'); 
+  blur.classList.add('blur-block');
 })
 
 asideClose.addEventListener('click', function () {
-  // aside.classList.remove('aside__hidden');
-  blur.style.display = "none";
-  aside.style.left = "-340px"
+  aside.classList.add('aside__hidden');
+  aside.classList.remove('aside__open');
+  blur.classList.remove('blur-block');
 })
 
 blur.addEventListener('click', function() {
-  if (aside.style.left == "0px") {
+  if (aside.classList.contains('aside__open')) {
     // console.log('клик123');
-    blur.style.display = "none";
-    aside.style.left = ""
-    callback.style.right = ""
-    feedback.style.right = ""
+    blur.classList.remove('blur-block');
+    aside.classList.add('aside__hidden');
+    aside.classList.remove('aside__open');
+    callback.classList.remove('callBack__open')
+    feedback.classList.remove('feedBack__open')
 } else {
   // console.log('Нэт123');
-  feedback.style.right = ""
-  callback.style.right = ""
-  blur.style.display = "none";
+  feedback.classList.remove('feedBack__open')
+  aside.classList.remove('aside__open');
+  callback.classList.remove('callBack__open')
+  blur.classList.remove('blur-block');
 }
 });
 // открытие/закрытие callback
@@ -45,17 +46,19 @@ const callbackClose = document.querySelectorAll('.callBack__close')
 
 for(item of asideCallbackBtn) {
   item.addEventListener('click', function() {
-  callback.style.right = "0px"
-  aside.style.left = ""
-  blur.style.display = "block"; 
+  callback.classList.add('callBack__open')
+  callback.classList.remove('callBack__hidden')
+  // aside.classList.add('aside__hidden');
+  aside.classList.remove('aside__open');
+  blur.classList.add('blur-block');
   document.getElementById("callBack__phone").focus({preventScroll:true}); 
 });
 }
 
 for(item of callbackClose) {
   item.addEventListener('click', function () {
-  blur.style.display = "none";
-  callback.style.right = ""
+  blur.classList.remove('blur-block');
+  callback.classList.remove('callBack__open')
 });
 }
 
@@ -69,9 +72,10 @@ const feedbackClose = document.querySelectorAll('.feedBack__close')
 
 for(item of asideFeedBackBtn) {
   item.addEventListener('click', function() {
-  feedback.style.right = "0px"
-  aside.style.left = ""
-  blur.style.display = "block"; 
+  feedback.classList.add('feedBack__open')
+  // aside.classList.add('aside__hidden');
+  aside.classList.remove('aside__open');
+  blur.classList.add('blur-block');
   document.getElementById("login-namt").focus({preventScroll:true});  
   });  
 }
@@ -79,8 +83,8 @@ for(item of asideFeedBackBtn) {
 for(item of feedbackClose){
   item.addEventListener('click', function () {
     // console.log('я тут');
-    blur.style.display = "none";
-    feedback.style.right = ""
+    blur.classList.remove('blur-block');
+    feedback.classList.remove('feedBack__open')
   });
 }
 

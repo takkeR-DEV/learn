@@ -2,7 +2,7 @@
 
 const button = document.querySelector('.main__button-read-more');
 const page = document.querySelector('.main__text-container');
-let text = document.querySelector('.main__button-read-more>p');
+let text = document.querySelector('.main__button-read-more>span:nth-child(2)');
 
 button.addEventListener('click', function () {
 	
