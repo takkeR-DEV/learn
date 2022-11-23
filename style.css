@@ -1776,10 +1776,12 @@ background: white;
       height: 32px;
       background-color: #FF3E79;
       border-radius: 16px; }
+    .prices__head-table {
+      padding: 0; }
     .prices__head-table li:nth-child(1) {
-      width: 287px; }
+      width: 332px; }
     .prices__head-table li:last-child {
-      margin-right: 123px;
+      margin-right: 166px;
       visibility: hidden; }
     .prices__logo h3 {
       display: none; }
