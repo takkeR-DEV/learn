@@ -108,9 +108,6 @@
     padding: 3px;
     transform: rotate(-45deg);
   }
-  &__main {
-    // display: flex;
-  }
   &__info {
     // width: 421px;
     // height: 60px;
@@ -204,9 +201,6 @@
     }
     &__logo li:nth-child(2) {
       padding-left: 15px;
-    }
-    &__logo li:nth-child(1) {
-      // padding-left: 16px;
     }
     &__main {
       flex-direction: column;
