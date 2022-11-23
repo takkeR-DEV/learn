@@ -987,7 +987,7 @@ background: white;
       margin-right: 5px; } } }
 
 .main__text-container {
-  max-height: 100px;
+  max-height: 107px;
   overflow: hidden;
   transition: max-height 0.4s ease-in-out; }
 
@@ -1789,7 +1789,9 @@ background: white;
     .prices__logo li {
       margin-left: 10px; }
     .prices__head-table {
-      display: none; } }
+      display: none; }
+    .prices__main {
+      margin-bottom: 20px; } }
   @media all and (min-width: 1120px) {
     .prices__logo li:last-child {
       margin: 0; } }
