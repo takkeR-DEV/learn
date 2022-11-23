@@ -183,16 +183,19 @@
       background-color: $callBack-references-color;
       border-radius: 16px;
     }
+    &__head-table {
+      padding: 0;
+    }
     &__head-table li:nth-child(1) {
-      width: 287px;
+      width: 332px;
     }
     &__head-table li:last-child {
-      margin-right: 123px;
+      margin-right: 166px;
       visibility: hidden;
     }
     &__logo h3 {
       display: none;
-    }
+    }  
     &__logo li:nth-child(1) {
       width: 368px;
     }
