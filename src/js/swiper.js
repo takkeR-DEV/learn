@@ -1,78 +1,51 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([ Navigation, Pagination ])
+Swiper.use([ Navigation, Pagination ]);
 
-const switcher = document.querySelector('.trademarks__wrapper:nth-child(2)');
-const switcherTwo = document.querySelector('.trademarks__main');
-const switcherThree = document.querySelectorAll('.trademarks__logo');
-let isSviperInit = false;
-
-
-function swiperInit() {
-const swiper = new Swiper('.swiper',{
-  centeredSlides: false,   
-  centeredSlidesBounds: true,
-  watchOverflow: true,
-  direction: 'horizontal',
-  slidesPerView: 1.1,
-  spaceBetween: 10,
-  breakpoints: {
-    320: {
-      slidesPerView: 1.3,
-      spaceBetween: 16
-    },
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    },
-    640: {
-      slidesPerView: 2.7,
-      spaceBetween: 40
+let sliders;
+const swiperContainer = document.querySelector(".swiper");
+function createSlider() {
+  if (window.innerWidth < 768) {
+    if (!swiperContainer.classList.contains("swiper-initialized")) {
+      sliders = new Swiper(".swiper", {
+        centeredSlides: false,   
+        centeredSlidesBounds: true,
+        watchOverflow: true,
+        direction: 'horizontal',
+        slidesPerView: 1.1,
+        spaceBetween: 10,
+        breakpoints: {
+          320: {
+            slidesPerView: 1.2,
+            spaceBetween: 16
+          },
+          480: {
+            slidesPerView: 1.8,
+            spaceBetween: 30
+          },
+          640: {
+            slidesPerView: 2.5,
+            spaceBetween: 40
+          }
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+          dynamicMainBullets: 12,
+          clickable: true,
+        },
+      
+      }) ;
     }
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-    dynamicMainBullets: 12,
-    clickable: true,
-  },
-
-}) ;
-return swiper;
+  } else {
+    if (swiperContainer.classList.contains("swiper-initialized") && !sliders[0].destroyed) {
+      for (let slider of sliders) {
+        slider.destroy();
+      }
+    }
+  }
 }
+createSlider();
 
-// ----------------
-
-const mobile = window.matchMedia("(min-width: 0px) and (max-width: 767px)");
-
-function changeClasses () {	
- 	if (mobile.matches == true) {
- 		switcher.classList.add('swiper'); 
- 		switcherTwo.classList.add('swiper-wrapper');
- 		for (let i=0; i<switcherThree.length; i++) {
- 			switcherThree[i].classList.add('swiper-slide');
- 		}
- 
- 		if (isSviperInit == false) {
- 			swiper = swiperInit('');	
- 			isSviperInit = true;
- 		}
- 		
- 	} else {
- 		switcher.classList.remove('swiper');
- 		switcherTwo.classList.remove('swiper-wrapper');
- 		for (let i=0; i<switcherThree.length; i++) {
- 			switcherThree[i].classList.remove('swiper-slide');
- 		}
-
- 		if (isSviperInit == true) {
- 			swiper.destroy();
- 			isSviperInit = false;
- 		}
- 	}
-}
-
-changeClasses();
-
-window.addEventListener('resize',function() {
-	changeClasses();    
+window.addEventListener("resize", () => {
+  createSlider();
 });
