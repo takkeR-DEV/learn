@@ -218,6 +218,9 @@
     &__head-table {
       display: none;
     }
+    &__main {
+      margin-bottom: 20px;
+    }
   }
   @media all and (min-width: 1120px) {
     &__logo li:last-child {
