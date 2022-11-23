@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -112,7 +111,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="menu-scroll-full">
           <div class="menu-scroll">
             <ul>
               <li><a href="#" title="что-то">Ремонтируемые устройства</a></li>
@@ -139,7 +138,7 @@
                 очередь, советуют нас родным и близким.
               </p>
             </div>
-            <button class="main__button-read-more" title="Читать далее"><span class="main__button-expand main__button-expand_rotate"></span><p class="check">Читать далее</p></button>
+            <button class="main__button-read-more" title="Читать далее"><span class="main__button-read-more-tst main__button-expand main__button-expand_rotate"></span><span class="check">Читать далее</span></button>
           </article>
           <div class="main__image-container">
             <img src="./img/signboard_full.png">
@@ -201,7 +200,7 @@
               </div>
             </main>
             <div class="swiper-pagination"></div>
-            <button class="trademarks__button-read-more" title="Показать все"><span class="trademarks__button-expand trademarks__button-expand_rotate"></span><p class="check">Показать все</p></button>
+            <button class="trademarks__button-read-more" title="Показать все"><span class="trademarks__button-expand trademarks__button-expand_rotate"></span><span class="check">Показать все</span></button>
           </div>
         </div>
         <div class="repairs">
@@ -210,7 +209,7 @@
               <h2>РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
             </div>
           </header>
-          <div class="repairs__wrapper repairs__swiper">
+          <div class="repairs__wrapper swiper">
             <main class="repairs__main swiper-wrapper">
               <div class="repairs__logo swiper-slide">
                 <span class="repairs__text">Ремонт ноутбуков</span>
@@ -236,7 +235,7 @@
               </div>
             </main>
             <div class="place swiper-pagination"></div>
-            <button class="repairs__button-read-more" title="Показать все"><span class="repairs__button-expand repairs__button-expand_rotate"></span><p class="check">Показать все</p></button>
+            <button class="repairs__button-read-more" title="Показать все"><span class="repairs__button-expand repairs__button-expand_rotate"></span><span class="check">Показать все</span></button>
           </div>
         </div>
         <div class="prices">
@@ -245,137 +244,106 @@
               <h2>ЦЕНЫ НА УСЛУГИ</h2>
             </div>
           </header>
-          <div class="prices__wrapper prices__swiper">
+          <div class="prices__wrapper swiper">
             <main class="prices__main swiper-wrapper">
-              <div class="prices__logo swiper-slide">
-                <div class="prices__logo-conteiner">
-                  <div class="">
-                    <h3>Ремонтные услуги</h3>
-                    <span>Диагностика</span>
-                  </div>
-                  <div class="">
-                    <h3>Цена</h3>
-                    <span>Бесплатно</span>
-                  </div>
-                  <div class="">
-                    <h3>Срок</h3><span>30 мин</span>
-                  </div>
+              <ul class="prices__head-table">
+                <li><h3>Ремонтные услуги</h3></li>
+                <li><h3>Цена</h3></li>
+                <li><h3>Срок</h3></li>
+                <li><h3></h3></li>
+              </ul>
+                <div class="swiper-slide">
+                  <ul class="prices__logo">
+                    <li>
+                      <h3>Ремонтные услуги</h3>
+                      <span>Тестирование с выдачей технического заключения</span>
+                    </li>
+                    <li>
+                      <h3>Цена</h3>
+                      <span>1000 ₽</span>
+                    </li>
+                    <li>
+                      <h3>Срок</h3>
+                      <span>30-120 мин</span>
+                    </li>
+                    <li class="prices__button"><button><span>ЗАКАЗАТЬ</span></button></li>
+                  </ul>
                 </div>
-                <button class="prices__button"><span>ЗАКАЗАТЬ</span></button>
-              </div>
-              <div class="prices__logo swiper-slide">
-                <div class="prices__logo-conteiner">
-                  <div class="">
-                    <h3>Ремонтные услуги</h3>
-                    <span>Замена дисплея</span>
-                  </div>
-                  <div class="">
-                    <h3>Цена</h3>
-                    <span>1000 ₽</span>
-                  </div>
-                  <div class="">
-                    <h3>Срок</h3><span>30-120 мин</span>
-                  </div>
+                <div class="swiper-slide">
+                  <ul class="prices__logo">
+                    <li>
+                      <h3>Ремонтные услуги</h3>
+                      <span>Замена дисплея</span>
+                    </li>
+                    <li>
+                      <h3>Цена</h3>
+                      <span>1000 ₽</span>
+                    </li>
+                    <li>
+                      <h3>Срок</h3>
+                      <span>30-120 мин</span>
+                    </li>
+                    <li class="prices__button"><button><span>ЗАКАЗАТЬ</span></button></li>
+                  </ul>
                 </div>
-                <button class="prices__button"><span>ЗАКАЗАТЬ</span></button>
-              </div>
-              <div class="prices__logo swiper-slide">
-                <div class="prices__logo-conteiner">
-                  <div class="">
-                    <h3>Ремонтные услуги</h3>
-                    <span>Замена полифонического <br>динамика</span>
-                  </div>
-                  <div class="">
-                    <h3>Цена</h3>
-                    <span>1000 ₽</span>
-                  </div>
-                  <div class="">
-                    <h3>Срок</h3><span>30-120 мин</span>
-                  </div>
+                <div class="swiper-slide">
+                  <ul class="prices__logo">
+                    <li>
+                      <h3>Ремонтные услуги</h3>
+                      <span>Замена полифонического динамика</span>
+                    </li>
+                    <li>
+                      <h3>Цена</h3>
+                      <span>1000 ₽</span>
+                    </li>
+                    <li>
+                      <h3>Срок</h3>
+                      <span>30-120 мин</span>
+                    </li>
+                    <li class="prices__button"><button><span>ЗАКАЗАТЬ</span></button></li>
+                  </ul>
                 </div>
-                <button class="prices__button"><span>ЗАКАЗАТЬ</span></button>
-              </div>
-              <div class="prices__logo swiper-slide">
-                <div class="prices__logo-conteiner">
-                  <div class="">
-                    <h3>Ремонтные услуги</h3>
-                    <span>Тестирование с выдачей <br>технического заключения</span>
-                  </div>
-                  <div class="">
-                    <h3>Цена</h3>
-                    <span>1000 ₽</span>
-                  </div>
-                  <div class="">
-                    <h3>Срок</h3><span>30-120 мин</span>
-                  </div>
+                <div class="swiper-slide">
+                  <ul class="prices__logo">
+                    <li>
+                      <h3>Ремонтные услуги</h3>
+                      <span>Замена программного обеспесения</span>
+                    </li>
+                    <li>
+                      <h3>Цена</h3>
+                      <span>1000 ₽</span>
+                    </li>
+                    <li>
+                      <h3>Срок</h3>
+                      <span>30-120 мин</span>
+                    </li>
+                    <li class="prices__button"><button><span>ЗАКАЗАТЬ</span></button></li>
+                  </ul>
                 </div>
-                <button class="prices__button"><span>ЗАКАЗАТЬ</span></button>
-              </div>
-              <div class="prices__logo swiper-slide">
-                <div class="prices__logo-conteiner">
-                  <div class="">
-                    <h3>Ремонтные услуги</h3>
-                    <span>Замена программного <br>обеспечения</span>
-                  </div>
-                  <div class="">
-                    <h3>Цена</h3>
-                    <span>1000 ₽</span>
-                  </div>
-                  <div class="">
-                    <h3>Срок</h3><span>30-120 мин</span>
-                  </div>
+                <div class="swiper-slide">
+                  <ul class="prices__logo">
+                    <li>
+                      <h3>Ремонтные услуги</h3>
+                      <span>Диагностика</span>
+                    </li>
+                    <li>
+                      <h3>Цена</h3>
+                      <span>Бесплатно</span>
+                    </li>
+                    <li>
+                      <h3>Срок</h3>
+                      <span>30-120 мин</span>
+                    </li>
+                    <li class="prices__button"><button><span>ЗАКАЗАТЬ</span></button></li>
+                  </ul>
                 </div>
-                <button class="prices__button"><span>ЗАКАЗАТЬ</span></button>
-              </div>
             </main>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="table-prices">
-            <table class="table-prices__wrapper">
-              <thead class="table-prices__head">
-                <tr>
-                  <th>Ремонтные услуги</th>
-                  <th>Цена</th>
-                  <th>Срок</th>
-                  <th></th>
-                </tr>
-              </thead>
-                <tbody class="table-prices__body">
-                  <tr>
-                    <td>Диагностика</td>
-                    <td>Бесплатно</td>
-                    <td>30 мин</td>
-                    <td class="table-prices__row"><button class="table-prices__button"><span>ЗАКАЗАТЬ</span></button></td>
-                    <div class="table-prices__block"></div>
-                  </tr>
-                  <tr>
-                    <td>Замена дисплея</td>
-                    <td>1000 ₽</td>
-                    <td>30-120 мин</td>
-                    <td class="table-prices__row"><button class="table-prices__button">ЗАКАЗАТЬ</button></td>
-                    <div class="table-prices__block-2"></div>
-                  </tr>
-                  <tr>
-                    <td>Замена полифонического динамика</td>
-                    <td>1000 ₽</td>
-                    <td>30-120 мин</td>
-                    <td class="table-prices__row"><button class="table-prices__button">ЗАКАЗАТЬ</button></td>
-                    <div class="table-prices__block-3"></div>
-                  </tr>
-                  <tr>
-                    <td>Замена программного обеспечения</td>
-                    <td>1000 ₽</td>
-                    <td>30-120 мин</td>
-                    <td class="table-prices__row"><button class="table-prices__button">ЗАКАЗАТЬ</button></td>
-                  </tr>
-                </tbody>
-            </table>
           </div>
           <div class="prices__info">
             <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
             <p><a href="#">Получить коммерческое предложение</a></p>
           </div>
-          </div>
+        </div>
       
           <div class="footer">
             <span>© 2019 CPS<br>Разработано командой Apesong</span>
@@ -397,17 +365,17 @@
           <div class="feedBack__header">
             <h2>Обратная связь</h2>
           </div>
-          <form class="feedBack__form">
-            <input type="text" name="name" placeholder="Имя" autofocus id="login-namt">
-            <input type="text" name="phone" placeholder="Телефон" id="feedBack__phone">
-            <input type="text" name="email" placeholder="Электронная почта" id="login-email">
-            <textarea placeholder="Сообщение"></textarea>
+          <form class="feedBack__form" id="444" method="get" action="#">
+            <input type="text" name="name" placeholder="Имя" autofocus id="login-namt" required pattern="^[ A-Za-zА-Яа-яЁё]+$">
+            <input type="tel" pattern="^[ 0-9]+$" name="phone" placeholder="Телефон" id="feedBack__phone" required>
+            <input type="email" name="email" placeholder="Электронная почта" id="login-email" required>
+            <textarea placeholder="Сообщение" required></textarea>
           </form>
           <div class="feedBack__references">
             <p>Нажимая “отправить”, вы даете согласие на <span class="pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
           </div>
           <div class="feedBack__send">
-            <button class="feedBack__button" aria-label="Кнопка"><span>ЗАКАЗАТЬ</span></button>
+            <button form="444" class="feedBack__button" aria-label="Кнопка"><span>ОТПРАВИТЬ</span></button>
           </div>
         </div>
       </div>
@@ -424,17 +392,16 @@
         <div class="callBack__header">
           <h2>Заказать звонок</h2>
         </div>
-        <div class="callBack__form">
-          <input type="text" name="phone" placeholder="Телефон" id="callBack__phone" autofocus>
-        </div>
-        <form class="callBack__references">
-          <p>Нажимая “отправить”, вы даете согласие на <span class="pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
+        <form class="callBack__form" id="555" method="get" action="#">
+          <input type="tel" pattern="^[ 0-9]+$" name="phone" placeholder="Телефон" id="callBack__phone" autofocus required>
         </form>
+        <div class="callBack__references">
+          <p>Нажимая “отправить”, вы даете согласие на <span class="pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
+        </div>
         <div class="callBack__send">
-          <button class="callBack__button" aria-label="Конпка"><span>ЗАКАЗАТЬ</span></button>
+          <button form="555" class="callBack__button" aria-label="Конпка"><span>ОТПРАВИТЬ</span></button>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
