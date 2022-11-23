@@ -87,6 +87,12 @@
     background-color: $callBack-references-color;
     border-radius: 16px;
   }
+  &__button button:hover {
+    filter: opacity(0.6);
+    transition-property: filter;
+    transition-duration: 0.25s;
+    transition-timing-function: linear; 
+  }
   &__button span {
     color: #ffffff;
     font-weight: bold;
