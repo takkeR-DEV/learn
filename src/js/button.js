@@ -2,7 +2,7 @@
 
 const button = document.querySelector('.trademarks__button-read-more');
 const page = document.querySelector('.trademarks__main');
-let text = document.querySelector('.trademarks__button-read-more>span:nth-child(2)');
+let text = document.querySelector('.trademarks__button-read-more>span');
 
 button.addEventListener('click', function () {
 	
@@ -10,8 +10,10 @@ button.addEventListener('click', function () {
   	button.classList.toggle('trademarks__button-read-more_rotated'); 
   	if (page.classList.contains('trademarks__main_open')) {
   		text.textContent = 'Скрыть';
+			button.classList.add('trademarks__button-read-more-tst')
   	} else {
   		text.textContent = 'Показать все';
+			button.classList.remove('trademarks__button-read-more-tst')
   		// page.classList.add('trademarks__main_hidden');
   	}
 }
