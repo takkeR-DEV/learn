@@ -108,19 +108,8 @@
   
   &__button-read-more-tst::before {
     content: "";
-    position: absolute;
-    top: -4px;
-    left: -20px;
-    display: inline-block;
-    background-image: url("../img/swiper/btn/expand.svg");
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
     transform: rotate(180deg);
-    transition-property: transform;
-    transition-duration: 0.8s;
-    transition-timing-function: ease-in-out;
-    transform-origin: 50% 50%;
+
   }
 
   &__logo:hover {
