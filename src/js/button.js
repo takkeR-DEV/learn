@@ -7,7 +7,7 @@ let text = document.querySelector('.trademarks__button-read-more>span');
 button.addEventListener('click', function () {
 	
   	page.classList.toggle('trademarks__main_open'); 
-  	button.classList.toggle('trademarks__button-read-more_rotated'); 
+  	// button.classList.toggle('trademarks__button-read-more_rotated'); 
   	if (page.classList.contains('trademarks__main_open')) {
   		text.textContent = 'Скрыть';
 			button.classList.add('trademarks__button-read-more-tst')

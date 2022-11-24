@@ -7,7 +7,7 @@ let text = document.querySelector('.main__button-read-more>span');
 button.addEventListener('click', function () {
 	
   	page.classList.toggle('main__main_open'); 
-  	button.classList.toggle('main__button-read-more_rotated'); 
+  	// button.classList.toggle('main__button-read-more_rotated'); 
   	if (page.classList.contains('main__main_open')) {
   		text.textContent = 'Скрыть';
 			button.classList.add('main__button-read-more-tst')
